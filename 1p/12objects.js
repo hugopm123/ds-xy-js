@@ -1,6 +1,5 @@
 //agregar 10e3 pares (llave:valor) a un objeto
 
-//GGG
 
 console.time("Tiempo")
 let objnum = {},k =0 
