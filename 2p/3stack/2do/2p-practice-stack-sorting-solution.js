@@ -13,7 +13,7 @@ function pila(tope) {
 
 function push(element) {
   if (this.full()) {
-    console.log("Tu pila esta llena")
+    console.log("La pila esta llena")
   } else {
     this.tp.unshift(element)
   }
@@ -21,13 +21,12 @@ function push(element) {
 
 function pop() {
   if (this.empty()) {
-    console.log("Tu pila esta vacia")
+    console.log("La pila esta vacia")
   }
   else {
     return this.tp.shift()
   }
 }
-
 function full() {
   if (this.tp.length === this.max)
     return true
@@ -52,8 +51,6 @@ function show() {
 function peek() {
   return this.tp[0]
 }
-
-
 
 function ord_pila(x) {
   let pas = 0;
@@ -90,12 +87,10 @@ function ord_pila(x) {
     }
 
     total[j - 1] = pas;
-
     console.log(stack.show())
 
     console.log("pasos: " + pas)
     var end = Date.now()
-
     total2[j - 1] = end - start
 
     console.log("tiempo: " + total2[j - 1] + "s")
@@ -108,25 +103,25 @@ total[5] = (total[0] + total[1] + total[2] + total[3] + total[4])
 total[6] = (total[5]) / (5)
 total2[5] = (total2[0] + total2[1] + total2[2] + total2[3] + total2[4])
 total2[6] = (total2[5]) / (5)
-console.log("Promedio pasos: " + total[5])
-console.log("Total de Pasos: " + total[6])
-console.log("Promedio Tiempo: " + total2[5] + "s")
-console.log("Total de tiempo: " + total2[6] + "s")
+console.log("Total pasos: " + total[5])
+console.log("Promedio de Pasos: " + total[6])
+console.log("Total Tiempo: " + total2[5] + "s")
+console.log("Promedio de tiempo: " + total2[6] + "s")
 ord_pila(100)
 total[5] = (total[0] + total[1] + total[2] + total[3] + total[4])
 total[6] = (total[5]) / (5)
 total2[5] = (total2[0] + total2[1] + total2[2] + total2[3] + total2[4])
 total2[6] = (total2[5]) / (5)
-console.log("Promedio pasos: " + total[5])
-console.log("Total de Pasos: " + total[6])
-console.log("Promedio Tiempo: " + total2[5] + "s")
-console.log("Total de tiempo: " + total2[6] + "s")
+console.log("Total pasos: " + total[5])
+console.log("Promedio de Pasos: " + total[6])
+console.log("Total Tiempo: " + total2[5] + "s")
+console.log("Promedio de tiempo: " + total2[6] + "s")
 ord_pila(1000)
 total[5] = (total[0] + total[1] + total[2] + total[3] + total[4])
 total[6] = (total[5]) / (5)
 total2[5] = (total2[0] + total2[1] + total2[2] + total2[3] + total2[4])
 total2[6] = (total2[5]) / (5)
-console.log("Promedio pasos: " + total[5])
-console.log("Total de Pasos: " + total[6])
-console.log("Promedio Tiempo: " + total2[5] + "s")
-console.log("Total de tiempo: " + total2[6] + "s")
+console.log("Total pasos: " + total[5])
+console.log("Promedio de Pasos: " + total[6])
+console.log("Total Tiempo: " + total2[5] + "s")
+console.log("Promedio de tiempo: " + total2[6] + "s")
